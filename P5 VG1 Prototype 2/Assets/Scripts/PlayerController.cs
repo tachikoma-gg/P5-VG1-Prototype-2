@@ -6,11 +6,17 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float speed = 25f;
     [SerializeField] private int outerBounds = 10;
+    [SerializeField] private GameObject projectilePrefab;
 
     void Update()
     {
         PlayerMove();
         PlayerBounds();
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            LaunchProjectile();
+        }
     }
 
     private void PlayerMove()
@@ -35,5 +41,10 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(-outerBounds, y, z);
         }
+    }
+
+    private void LaunchProjectile()
+    {
+        Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
     }
 }
