@@ -443,7 +443,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 63
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -468,13 +468,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.93, z: 0}
-  m_LocalScale: {x: 1, y: 20, z: 1}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 9.6, z: 7.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1940493716}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!850595691 &566500531
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -606,7 +606,8 @@ MonoBehaviour:
   - {fileID: 3613235437986049329, guid: cdf01f225b98a9046a40fa5d456271f9, type: 3}
   - {fileID: 5328599909725398538, guid: f89d6a79b40a05c439eb492fc1bf0345, type: 3}
   - {fileID: 4653163798060861480, guid: 7eb415485c977994bb7adeee185b2e13, type: 3}
-  animalIndex: 0
+  spawnRangeX: 20
+  spawnPositionZ: 20
 --- !u!4 &1505341563
 Transform:
   m_ObjectHideFlags: 0
@@ -759,10 +760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 400000, guid: 610afbb40c4385d42aa33adfe3531f0a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 534669905}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 610afbb40c4385d42aa33adfe3531f0a, type: 3}
       insertIndex: -1
@@ -788,15 +786,11 @@ MonoBehaviour:
   speed: 25
   outerBounds: 10
   projectilePrefab: {fileID: 4955425180841279067, guid: 93e4852e8c3c257418a1444de0519867, type: 3}
---- !u!4 &1940493716 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 610afbb40c4385d42aa33adfe3531f0a, type: 3}
-  m_PrefabInstance: {fileID: 1875497878}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 534669905}
   - {fileID: 170076735}
   - {fileID: 992285706}
   - {fileID: 1875497878}
