@@ -606,8 +606,10 @@ MonoBehaviour:
   - {fileID: 3613235437986049329, guid: cdf01f225b98a9046a40fa5d456271f9, type: 3}
   - {fileID: 5328599909725398538, guid: f89d6a79b40a05c439eb492fc1bf0345, type: 3}
   - {fileID: 4653163798060861480, guid: 7eb415485c977994bb7adeee185b2e13, type: 3}
-  spawnRangeX: 20
+  spawnRangeX: 10
   spawnPositionZ: 20
+  startDelay: 3
+  spawnInterval: 0.75
 --- !u!4 &1505341563
 Transform:
   m_ObjectHideFlags: 0
