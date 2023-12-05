@@ -442,7 +442,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 63
+  field of view: 105
   orthographic: 1
   orthographic size: 10
   m_Depth: -1
@@ -785,7 +785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3779205cc5bbcf14e8620f962832dc05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 25
+  speed: 50
   outerBounds: 10
   projectilePrefab: {fileID: 4955425180841279067, guid: 93e4852e8c3c257418a1444de0519867, type: 3}
 --- !u!1660057539 &9223372036854775807
